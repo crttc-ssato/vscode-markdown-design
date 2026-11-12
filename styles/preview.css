@@ -1,0 +1,108 @@
+/* VS CodeのテーマとMarkdownのフォント設定を尊重する。 */
+body {
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.4;
+  margin-top: 1.8em;
+  margin-bottom: 0.7em;
+}
+
+h1 {
+  padding-bottom: 0.4em;
+  border-bottom: 3px solid var(--vscode-textLink-foreground, currentColor);
+}
+
+h2 {
+  padding-left: 0.6em;
+  border-left: 5px solid var(--vscode-textLink-foreground, currentColor);
+  border-bottom: none;
+}
+
+h3 {
+  text-decoration: underline;
+  text-decoration-color: var(--vscode-textLink-foreground, currentColor);
+  text-underline-offset: 0.3em;
+}
+
+table {
+  width: 100%;
+  margin: 1.2em 0;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px 12px;
+  border: 1px solid var(--vscode-panel-border, currentColor);
+}
+
+table th {
+  font-weight: 700;
+  background: var(--vscode-textBlockQuote-background, transparent);
+}
+
+table tbody tr:nth-child(even) {
+  background: var(--vscode-textCodeBlock-background, transparent);
+}
+
+blockquote {
+  margin: 1.2em 0;
+  padding: 12px 16px;
+  border-left: 4px solid var(--vscode-textLink-foreground, currentColor);
+  border-radius: 4px;
+  background: var(--vscode-textBlockQuote-background, transparent);
+}
+
+blockquote > :first-child { margin-top: 0; }
+blockquote > :last-child { margin-bottom: 0; }
+
+pre {
+  padding: 16px;
+  border: 1px solid var(--vscode-panel-border, currentColor);
+  border-radius: 6px;
+  background: var(--vscode-textCodeBlock-background, transparent);
+  overflow-x: auto;
+}
+
+:not(pre) > code {
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  background: var(--vscode-textCodeBlock-background, transparent);
+}
+
+li { margin: 0.3em 0; }
+
+li input[type="checkbox"] {
+  margin-right: 0.5em;
+  accent-color: var(--vscode-textLink-foreground, currentColor);
+}
+
+details {
+  margin: 1.2em 0;
+  padding: 12px 16px;
+  border: 1px solid var(--vscode-panel-border, currentColor);
+  border-radius: 6px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+details[open] > summary { margin-bottom: 0.8em; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--vscode-focusBorder, currentColor);
+  outline-offset: 3px;
+}

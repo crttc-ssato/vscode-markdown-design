@@ -1,0 +1,17 @@
+{
+  "name": "vscode-markdown-design",
+  "displayName": "Markdown Design",
+  "description": "Markdownプレビューの見出し・表・引用などを読みやすく整えます。",
+  "version": "0.0.1",
+  "publisher": "crttc-ssato",
+  "license": "MIT",
+  "engines": { "vscode": "^1.100.0" },
+  "categories": ["Other"],
+  "keywords": ["markdown", "preview", "theme"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crttc-ssato/vscode-markdown-design.git"
+  },
+  "scripts": { "package": "npx --yes @vscode/vsce package" },
+  "contributes": { "markdown.previewStyles": ["./styles/preview.css"] }
+}
