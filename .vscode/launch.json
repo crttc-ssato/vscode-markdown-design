@@ -8,7 +8,8 @@
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}",
         "${workspaceFolder}/examples/preview.md"
-      ]
+      ],
+      "preLaunchTask": "Markdown Design: build"
     }
   ]
 }
